@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/profile_text"
+        android:icon="@drawable/ic_user_profile" />
+    <item
+        android:id="@+id/mealPlanFragment"
+        android:title="@string/meal_plan"
+        android:icon="@drawable/ic_meal_plan" />
+    <item
+        android:id="@+id/shoppingCartFragment"
+        android:title="@string/shopping_cart"
+        android:icon="@drawable/ic_shopping_cart" />
+    <item
+        android:id="@+id/trackMealsFragment"
+        android:title="@string/meal_tracking"
+        android:icon="@drawable/ic_track_meals"/>
+</menu>

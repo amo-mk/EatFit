@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mealPlanFragment">
+
+    <fragment
+        android:id="@+id/trackMealsFragment"
+        android:name="com.viola.eatfit.TrackMealsFragment"
+        android:label="fragment_track_meals"
+        tools:layout="@layout/fragment_track_meals" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.viola.eatfit.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/mealPlanFragment"
+        android:name="com.viola.eatfit.MealPlanFragment"
+        android:label="fragment_meal_plan"
+        tools:layout="@layout/fragment_meal_plan" />
+    <fragment
+        android:id="@+id/shoppingCartFragment"
+        android:name="com.viola.eatfit.ShoppingCartFragment"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" />
+</navigation>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Eat Fit</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_text">Profile</string>
+    <string name="meal_plan">Meal Plan</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="meal_tracking">Track Meals</string>
+    <string name="meal_name_hint"> Meal Name</string>
+    <string name="servings_hint"> Servings</string>
+    <string name="time_hint"> Time</string>
+    <string name="calorie_btn">Calc Calorie</string>
+    <string name="check_recipe_hint">Check Recipe</string>
+
+    <string name="age_text">Age in Years</string>
+    <string name="height_text">Height in CM</string>
+    <string name="weight_text">Weight in KG</string>
+    <string name="calc_calori_btn_text">Calculate Calorie</string>
+    <string name="bmi_show">Your BMI is: </string>
+    <string name="bmi_category">Your BMI category: </string>
+    <string name="bmi_categories">BMI Categories</string>
+    <string name="amount_of_calorie">Amount of Calorie</string>
+
+    <string-array name="items">
+        <item>Onions</item>
+        <item>Beans</item>
+        <item>Lemons</item>
+        <item>Peach</item>
+        <item>Flour</item>
+        <item>Tarin</item>
+    </string-array>
+</resources>

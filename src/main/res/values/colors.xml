@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundColor">#F6E0E0</color>
+    <color name="btn_color">#19A589</color>
+    <color name="calc_calorie_by">#F9D9D9</color>
+</resources>

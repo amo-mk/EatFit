@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#707070"
+        tools:context=".ProfileFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEE8E8"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="62dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+
+                android:src="@drawable/profile_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/editButton"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="22dp"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_edit" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <EditText
+                android:id="@+id/userNameET"
+                android:layout_width="170dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginBottom="27dp"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/editButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#FEE8E8"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:text="Activity Level"
+                app:layout_constraintBottom_toTopOf="@+id/textView43"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:text="Weight"
+                app:layout_constraintBottom_toTopOf="@+id/textView41"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="35dp"
+                android:text="Gender"
+                app:layout_constraintBottom_toTopOf="@+id/textView38"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Age"
+                app:layout_constraintBottom_toTopOf="@+id/textView39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="-1dp"
+                android:text="Height"
+                app:layout_constraintBottom_toTopOf="@+id/textView40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:text="BMI"
+                app:layout_constraintBottom_toTopOf="@+id/textView42"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:text="Food Type"
+                app:layout_constraintBottom_toTopOf="@+id/textView44"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="85dp"
+                android:text="Allergies"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+            <Button
+                android:id="@+id/profileSaveBTN"
+                android:layout_width="165dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginRight="160dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/button"
+                android:enabled="false"
+                android:text="Save"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/allergiresET"
+                tools:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/genderSelection"
+                android:layout_width="236dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/userAgeET"
+                app:layout_constraintStart_toEndOf="@+id/textView37"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/maleRB"
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/femaleRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/userAgeET"
+                android:layout_width="209dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="89dp"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/genderSelection" />
+
+            <EditText
+                android:id="@+id/userHeightET"
+                android:layout_width="210dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="60dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/userWeightET"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/genderSelection" />
+
+            <EditText
+                android:id="@+id/userWeightET"
+                android:layout_width="210dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="68dp"
+                android:layout_marginTop="8dp"
+                android:editable="true"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="number"
+                app:layout_constraintBottom_toTopOf="@+id/BMIvalue"
+                app:layout_constraintStart_toEndOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/userHeightET" />
+
+            <TextView
+                android:id="@+id/BMIvalue"
+                android:layout_width="211dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginLeft="88dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginRight="49dp"
+                android:text="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/userWeightET" />
+
+            <RadioGroup
+                android:id="@+id/mealTypeRadioGroup"
+                android:layout_width="242dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="47dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView42"
+                app:layout_constraintTop_toBottomOf="@+id/BMIvalue">
+
+                <RadioButton
+                    android:id="@+id/vegeRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:text="Vegeterian" />
+
+                <RadioButton
+                    android:id="@+id/nonVegeRB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:text="Non-vegetarian" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="216dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="11dp"
+
+                android:layout_marginEnd="49dp"
+                android:layout_marginRight="49dp"
+                android:clickable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView44"
+                app:layout_constraintTop_toBottomOf="@+id/mealTypeRadioGroup" />
+
+            <EditText
+                android:id="@+id/allergiresET"
+                android:layout_width="215dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="57dp"
+                android:layout_marginLeft="57dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="46dp"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView43"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
